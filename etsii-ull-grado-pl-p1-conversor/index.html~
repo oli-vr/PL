@@ -1,0 +1,24 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- -->
+      <title>JavaScript Temperature Converter</title>
+      <link href="global.css" rel="stylesheet" type="text/css"> <!-- Indicamos que e suna hoja de estilo -->
+
+     <script type="text/javascript" src="temperature.js"></script>  <!-- tipo de programa -->
+  </head>
+  <body>
+    <h1>Temperature Converter</h1> <!-- h1 cabecera -->
+    <table>
+      <tr>  <!-- tr es una fila -->
+        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th> <!-- Definimos una celda -->
+        <td><input id="original" onchange="calculate();"></td> <!-- table data, celda que contiene datos, input crea una entrada de datos, onchange crea un evento
+								, cuando se produce estre evento se ejecuta la funcion calculate() -->
+      </tr>
+      <tr>
+        <th>Converted Temperature:</th>
+        <td><span class="output" id="converted"></span></td>  <!-- en el javascript nos refiriremos al identificador converted para imprimir 
+								la conversión de la temperatura -->
+      </tr>
+    </table>
+  </body>
+</html>
